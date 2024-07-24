@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Feedback Form</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="Gender">Gender:</label><br>
+        <input type="radio">
+        <label for="male">Male</label><br>
+        <input type="radio">
+        <label for="female">Female</label><br>
+        <input type="radio">
+        <label for="other">Other</label><br><br>
+        <label for="course">Course:</label><br>
+        <select id="course" name="course">
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Machine Learning">Machine Learning</option>
+            </select><br><br>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter here..."></textarea>
+        <br><br>
+        <input type="checkbox" name="copy" id="copy">
+        <label for="copy">Send me a copy</label><br><br>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
