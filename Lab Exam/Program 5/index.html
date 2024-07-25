@@ -1,0 +1,60 @@
+<!-- Design a web page using CSS with suitable design for the following: 
+ i. Demonstrate different font styles. 
+ ii. Control the repetition of an image with the background-repeat property. 
+ iii. Define style for links as a: link, a: active, a: hover, a: visited. 
+ iv. Demonstrate Element visibility. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styles</title>
+    <style>
+        .bgimg{
+            background-image: url('./college_logo.png');
+            height:400px;
+            width:400px;
+            background-repeat: repeat;
+        }
+        a:link{
+            color:blue;
+        }
+        a:active{
+            color: red;
+        }
+        a:hover{
+            color: green;
+        }
+        a:visited{
+            color: yellow;
+        }
+
+        h2{
+            visibility: hidden;
+        }
+
+        h3{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font Styles</h1>
+    <p style="font-family: 'Times New Roman', Times, serif;">Times New Roman</p>
+    <p style="font-family: 'Arial', sans-serif;">Arial</p>
+    <p style="font-family: 'Courier New', Courier, monospace;">Courier New</p>
+
+    <h1>Image repetition</h1>
+    <div class="bgimg"></div>
+
+    <h1>Style links</h1>
+    <a href="https://www.google.com">Google</a>
+
+    <h2>This is not visible</h2>
+    <h3>This is visible</h3>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(214, 212, 212);
+}
+
+h1, form, option, .course, #submit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+form{
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border: 10px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    text-align: center;
+}
+
+input, textarea, button, #copy, select{
+    border: 1px solid rgb(97, 92, 92);
+    border-radius: 4px;
+}
+
+input[type='submit']{
+    background-color: rgb(68, 68, 242);
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    border-color: aliceblue;
+    box-shadow: none;
+}
+
+input[type='submit']:hover{
+    background-color: rgb(68, 68, 242);
+    transform: scale(1.1);
+}
