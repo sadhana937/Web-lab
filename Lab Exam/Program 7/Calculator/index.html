@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js"></script>
+    <style>
+        .container{
+            max-width: 300px;
+            margin: 0 auto;
+            border: 3px solid gray;
+            box-shadow: 0 0 5px black;
+            padding: 40px;
+            padding-top: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        label, input{
+            text-align: center;
+            padding: 5px;
+            margin: 20px;
+            margin-left: 20%;
+        }
+
+        button {
+            padding: 10px;
+        }
+        .btn1, .btn {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Calculator</h1>
+    <div>
+    <label for="input1">Enter the first Number</label>
+    <input type="text" id="input1"><br>
+    <label for="input2">Enter the second Number</label>
+    <input type="text" id="input2"><br>
+        <div class = "btn1">
+    <button onclick="add()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="divide()">/</button>
+    <br>
+            </div>
+    <div id="result"></div>
+    <br>
+    <div class="btn">
+    <button onclick="AC()">AC</button>
+    <button onclick="clearValues()">Clear</button>
+</div>
+    </div>
+    </div>
+    
+</body>
+</html>
