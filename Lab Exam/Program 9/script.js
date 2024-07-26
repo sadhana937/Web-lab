@@ -5,9 +5,9 @@ function validate(){
     let password = document.getElementById("password").value;
 
     let useridregex = /^[a-zA-Z0-9]{5,12}$/;
-    let nameregex = /^[a-zA-Z]{5,}$/;
+    let nameregex = /^[a-zA-Z ]{5,}$/;
     let emailregex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let passwordregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+    let passwordregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!&%*?])[A-Za-z\d@$!%*?&]{6,}$/;
 
     if (!useridregex.test(userid)){
         alert("User id must be between 5 to 12 characters");
